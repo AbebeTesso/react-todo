@@ -1,9 +1,12 @@
 import React from "react";
 
 function TodoListItem(props) {
+  const {
+    toDo: { title },
+  } = props;
   return (
     <div>
-      <li>{props.toDo.title}</li>
+      <li>{title}</li>
     </div>
   );
 }
