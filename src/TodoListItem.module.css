@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #02b3e4;
+}
+.ListItem{
+    display: block;
+    width: 70vw;
+    font-family: sans-serif;
+    max-width: fit-content;
+    background-color: purple;
+    border-image-repeat: 8px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+.forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    font-size: 24px;
+}
+.forms input{
+    background-color: aliceblue;
+    padding: 4px;
+    margin: 3px;
+}
+.add {
+   background-color:#04aa6d;
+    color: white;
+    border-color: black;
+    border-radius: 4px;
+     padding: 5px 8px;
+     margin: 2px;
+}
+.add:hover{
+    background-color: yellow;
+    color: black;
+}
+ul{
+    padding-left: 15px;
+    margin-left: 2px;
+}
+div > li{
+    padding: 1px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: red;
+    color: black;
+}
+svg{
+ 
+  padding: 2px;
+}
+li button{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+     padding: 2px;
+    margin: 3px;
+    margin-right: -0.5px;
+}
+svg:hover{
+    
+    color: yellowgreen;
+    font-size: 20px;
+    border-radius: 8px;
+}
+@media (max-width: 600px){
+    body{
+        background-color: orange;
+    }
+    .forms{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+         background-color: #aaa;
+    }
+    h1{
+        color: purple;
+        text-align: center;
+        background-color:cyan;
+    }
+}
+@media(min-width: 601px) and (max-width: 1040px){
+    body{
+        background-color: darkcyan;
+    }
+}

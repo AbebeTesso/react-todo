@@ -1,4 +1,7 @@
 import React from "react";
+import style from "./TodoListItem.module.css";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faTrash} from "@fortawesome/free-solid-svg-icons"
 
 function TodoListItem(props) {
   const {
@@ -7,11 +10,11 @@ function TodoListItem(props) {
   const { onRemoveTodo } = props;
   return (
     <div>
-      <li>
+      <li className={style.ListItem}>
         {title}
         {
-          <button type="button" onClick={() => onRemoveTodo(id)}>
-            Remove
+          <button className={style.btn} type="button" onClick={() => onRemoveTodo(id)}>
+            <FontAwesomeIcon icon={faTrash}/>
           </button>
         }
       </li>
