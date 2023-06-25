@@ -2,6 +2,7 @@ import React from "react";
 import style from "./TodoListItem.module.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faTrash} from "@fortawesome/free-solid-svg-icons"
+import PropTypes from "prop-types";
 
 function TodoListItem(props) {
   const {
@@ -21,5 +22,8 @@ function TodoListItem(props) {
     </div>
   );
 }
-
+TodoListItem.propTypes = {
+  toDo: PropTypes.object,
+  onRemoveTodo: PropTypes.func,
+}
 export default TodoListItem;

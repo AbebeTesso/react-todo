@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 
 function InputWithLabel({
   id,
@@ -32,5 +33,15 @@ function InputWithLabel({
     </>
   );
 }
+InputWithLabel.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  value: PropTypes.string,
+  onInputChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  children: PropTypes.object,
+  autoFocus: PropTypes.bool,
 
+}
 export default InputWithLabel;
