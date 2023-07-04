@@ -23,6 +23,7 @@
           throw new Error(message);
         }
         const data = await response.json();
+        console.log(data)
         const sortData = data.records.sort((objectA, objectB)=>{
             if(objectA.fields.title < objectB.fields.title){
               return -1;
@@ -47,7 +48,7 @@
     }
     useEffect(() => {
       fetchData();
-    });
+    }, []);
 
     useEffect(() => {
       if (!isLoading) {
